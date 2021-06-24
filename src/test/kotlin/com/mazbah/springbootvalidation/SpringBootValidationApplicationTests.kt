@@ -1,0 +1,13 @@
+package com.mazbah.springbootvalidation
+
+import org.junit.jupiter.api.Test
+import org.springframework.boot.test.context.SpringBootTest
+
+@SpringBootTest
+class SpringBootValidationApplicationTests {
+
+	@Test
+	fun contextLoads() {
+	}
+
+}
