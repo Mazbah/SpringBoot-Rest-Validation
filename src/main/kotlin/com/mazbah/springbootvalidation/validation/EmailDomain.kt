@@ -9,9 +9,9 @@ import kotlin.reflect.KClass
     AnnotationTarget.VALUE_PARAMETER, AnnotationTarget.FIELD)
 @Retention(AnnotationRetention.RUNTIME)
 @MustBeDocumented
-@Constraint(validatedBy = [CustomEmailValidator::class])
+@Constraint(validatedBy = [EmailDomainValidator::class])
 
-annotation class CustomEmail (
+annotation class EmailDomain (
     val message: String = "Email isn't Valid. Please use robi.com.bd or reddotdigitalit.com domain",
     val groups: Array<KClass<out Any>> = [],
     val payload: Array<KClass<out Payload>> = []

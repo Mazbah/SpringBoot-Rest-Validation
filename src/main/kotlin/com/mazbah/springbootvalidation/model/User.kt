@@ -1,6 +1,6 @@
 package com.mazbah.springbootvalidation.model
 
-import com.mazbah.springbootvalidation.validation.CustomEmail
+import com.mazbah.springbootvalidation.validation.EmailDomain
 import javax.persistence.*
 import javax.validation.constraints.*
 
@@ -22,7 +22,7 @@ data class User(
     @Column(name = "last_name") var lastName:String? = null,
 
 
-    @field:CustomEmail(message = "Email isn't Valid.Please use robi.com.bd or reddotdigitalit.com domain")
+    @field:EmailDomain(message = "Email isn't Valid.Please use robi.com.bd or reddotdigitalit.com domain")
     @field:Email @field:NotBlank(message = "Email is mandatory")
     @Column(name = "email") var email: String
 )
