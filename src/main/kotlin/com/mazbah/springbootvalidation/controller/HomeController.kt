@@ -49,7 +49,7 @@ class HomeController(private val userService: UserService, private val userRepos
     //internationalization
     @GetMapping("/greeting")
     fun messageI18N(): String{
-        return messageSource.getMessage("greeting", null, LocaleContextHolder.getLocale())
+        return messageSource.getMessage("Hola! Greeting", null, LocaleContextHolder.getLocale())
     }
 
     // Get users by Page
